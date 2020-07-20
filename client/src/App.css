@@ -1,0 +1,29 @@
+:root{
+  --mainBlue: #123456;
+  --lightBlue:#65aad3;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#f0f340;
+  --mainRed:#9c102e;
+  
+}
+
+body{
+  font-family: "Roboto", sans-serif !important; /*bootstrap is overriding, so include imp tag*/
+  background: var(--mainWhite) !important;
+  color:var(--mainDark) !important;
+}
+
+.text-title{
+  font-family: 'Quicksand', cursive; /*no need to include imp tag since it's a custom class*/
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue{
+  color:var(--mainBlue);
+}
+
+.text-bright{
+  color:var(--lightBlue);
+}

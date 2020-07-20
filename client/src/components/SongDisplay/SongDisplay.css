@@ -1,0 +1,43 @@
+
+  
+  * {box-sizing: border-box;}
+  
+  p {
+    margin: 0 0 1em 0;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container {
+    width: 800px;
+    height: 10em;
+    border-bottom: 1px solid rgb(111,41,97);
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  .push-right {
+    margin-left: auto;
+  }
+  
+  .album-img-top{
+      width:120px;
+      height:120px;
+  }
+  .song-title{
+      font-size: 1.5rem;
+  
+  }
+  .artist-title{
+      font-size:0.75rem;
+  }
+ 
