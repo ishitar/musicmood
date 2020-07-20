@@ -84,8 +84,8 @@ class LandingPage extends Component {
       <div className="LandingPage">
         {!loggedIn ? <a href='http://localhost:8888' > Login to Spotify </a> :
         <a href=''>Logout</a>}
-        <MusicCluster images={albumImage}/>
-        <ActivityForm />
+        {/* <MusicCluster images={albumImage}/> */}
+        {/* <ActivityForm /> */}
         <div>
           Now Playing: { this.state.nowPlaying.name }
         </div>
