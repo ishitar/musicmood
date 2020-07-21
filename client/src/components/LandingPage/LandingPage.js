@@ -60,31 +60,27 @@ class LandingPage extends Component {
       // songName.push(data.track.name);
       // timePlayed.push(data.played_at);
       // albumName.push(data.track.album.name);
-
-      if(data.track.album.images[2].url){
-        albumImage.push(data.track.album.images[2].url);
-      }
+      albumImage.push(data.track.album.images[2].url);
       // let artists = [];
       // data.track.artists.map(songData => {
       //   artists.push(songData.name);
       // });
       // artistName.push(artists);
-      //var track = <SongDisplay songName={data.track.name} timePlayed={data.played_at} albumName={data.track.album.name} albumImage={data.track.album.images[2].url} artistName={artists}/>;
-      
-    })})
-    this.setState({albumImage});
-    //console.log(songName, artistName, albumImage, albumName, timePlayed);
+    })
+    this.setState({albumImage}); 
+  })
     
   }
+
   render() {
     const { loggedIn, apiResponse, albumImage} = this.state;
-    console.log(this.state.albumImage);
+    console.log(albumImage.length);
 
     return (
       <div className="LandingPage">
         {!loggedIn ? <a href='http://localhost:8888' > Login to Spotify </a> :
         <a href=''>Logout</a>}
-        {/* <MusicCluster images={albumImage}/> */}
+        {albumImage.length > 0 ? <MusicCluster images={albumImage}/> : null}
         {/* <ActivityForm /> */}
         <div>
           Now Playing: { this.state.nowPlaying.name }

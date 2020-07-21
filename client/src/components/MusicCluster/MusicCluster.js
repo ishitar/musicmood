@@ -22,7 +22,7 @@ const imageDivs = (number, images) => {
     if(row > 0 && col > 0){
         console.log(images.length);
         while(images.length) newArr.push(images.splice(0,4));
-        console.log(newArr);
+        console.log(newArr[0][1]);
         // if(newArr.length>0){
         //     for(i = 0; i < row; i++){
         //         img.push(`<div className="row">`);
@@ -38,6 +38,7 @@ const imageDivs = (number, images) => {
     return img;
 }
 export const MusicCluster = (props) => {
+    console.log(props.images);
     const images = props.images;
     let img = [];
     img = imageDivs(images.length,images);
